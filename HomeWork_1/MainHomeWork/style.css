@@ -1,0 +1,46 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(233, 182, 107);
+}
+
+.registerForm{
+    background-color: rgb(223, 220, 210);
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerForm label{
+    font-size: x-large;
+    margin-top: 100px;
+}
+.registerForm .innType{
+    width: 60%;
+    margin-top: 30px;
+    height: 40px;
+}
+.registerForm .numberType{
+    width: 60%;
+    margin-top: 30px;
+    height: 40px;
+}
+
+.registerForm .submitReg{
+    margin-top: 30px;
+    width: 180px;
+    height: 40px;
+}
+.registerForm #notificationInn{
+    font-size: 30px;
+}
+.registerForm #notificationNum{
+    font-size: 30px;
+}
