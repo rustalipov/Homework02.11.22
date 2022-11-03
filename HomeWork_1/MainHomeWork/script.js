@@ -8,22 +8,29 @@ let notificationInn = document.querySelector('#notificationInn')
 let telNum = /^\+996 \d{3} \d{2}-\d{2}-\d{2}$/
 
 //Проверка ИНН на Жен через регулярное выражение
-let innW = /1\d{13}/
+let innReg = /^(1|2)\d{13}$/
 
-// Проверка ИНН на Муж через регулярное выражение
-let innM = /2\d{13}/
 
 submitReg.addEventListener('click',()=>{
+  
     // значение input ИНН
     let a = innType.value 
+  
     //Значение input Номера
     let b = numberType.value
-    
+  
+    //принимает проверенное значение с input для дальнейшей проверки
+    let c = a.match(innReg)
+
     //проверка на инн
-    if(innW.test(a)){
-        notificationInn.innerHTML = 'Жен'
-    }else if(innM.test(a)){
-        notificationInn.innerHTML = 'Муж'
+    if(c!=null){
+        if(c[1] == 1){
+            notificationInn.innerHTML = 'Жен'
+            notificationInn.style.color = 'green'
+        }else{
+            notificationInn.innerHTML = 'Муж'
+            notificationInn.style.color = 'green'
+        }
     }else{
         notificationInn.innerHTML = 'Неверный ИНН'
         notificationInn.style.color = 'red'
