@@ -1,0 +1,39 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: silver;
+}
+
+.block{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block input{
+    width: 200px;
+    height: 50px;
+}
+.block .submit{
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+}
+.block .submit{
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+}
+.block .result{
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 100px;
+    text-align: center;
+
+}
